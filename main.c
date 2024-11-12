@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void) {
+// main2.c파일의 int main(void) 함수 실행 위해 main에서 main_1로 변경 
+int main_1(void) {
   // 기본 출력
   printf("Hello World\n");
 
