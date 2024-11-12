@@ -33,8 +33,6 @@ int main(void) {
     printf("둘다 아니다.\n");
   }
 
-  // 반복문 : while, do while, for 
-
   // 변수 : 변하는 수 
   // 정수형 변수에 대한 예제
   int age = 12;
@@ -60,7 +58,7 @@ int main(void) {
   printf("%d + %d = %d\n", 3, 7, 3+7);
 
   // scanf : 키보드 입력 받아서 저장
-  int input;
+  /*int input;
   printf("값을 입력하세요 : ");
   scanf("%d", &input);
   printf("입력값 : %d\n", input);
@@ -70,6 +68,45 @@ int main(void) {
   scanf("%d %d %d", &one, &two, &three);
   printf("값 : %d\n", one);
   printf("값 : %d\n", two);
-  printf("값 : %d\n", three);
+  printf("값 : %d\n", three); */
+
+  // 문자(한 글자), 문자열(한 글자 이상의 여러 글자)
+  char ch = 'A';
+  printf("%c\n", ch);
+
+  /*char str[256];
+  scanf("%s", str);
+  printf("%s\n", str);*/
+
+  // 프로젝트 
+  // 경찰관이 범죄자의 정보를 입수 (조서 작성)
+  // 이름? 나이? 몸무게? 키? 범죄명?
+  char name[256];
+  printf("이름이 뭐에요? ");
+  scanf("%s", name);
+
+  int realAge;
+  printf("몇 살이에요? ");
+  scanf("%d", &realAge);
+
+  float weight;
+  printf("몸무게는 몇 kg이에요? ");
+  scanf("%f", &weight);
+
+  double height;
+  printf("키는 몇 cm이에요? ");
+  scanf("%lf", &height);
+
+  char what[256];
+  printf("무슨 범죄를 저질렀어요? ");
+  scanf("%s", what);
+
+  // 조서 내용 출력
+  printf("\n\n--- 범죄자 정보---\n\n");
+  printf("이름 : %s\n", name);
+  printf("나이 : %d\n", realAge);
+  printf("몸무게 : %.2f\n", weight);
+  printf("키 : %.2lf\n", height);
+  printf("범죄 : %s\n", what);
   return 0;
 }
