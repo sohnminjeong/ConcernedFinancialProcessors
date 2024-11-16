@@ -31,6 +31,10 @@ int main(void){
   char str[] = "coding";
   printf("%s\n", str);
 
-  
+  // 문자열 심화
+  char c_array[10] = {'c', 'o', 'd', 'i', 'n', 'g'};
+  for(int i=0; i<sizeof(c_array); i++){
+    printf("%c\n", c_array[i]);
+  }
   return 0;
 }
